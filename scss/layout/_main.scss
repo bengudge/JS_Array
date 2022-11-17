@@ -1,0 +1,41 @@
+
+header {
+    .container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+    }
+    
+}
+
+.content {
+    @include centre;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+
+    .email-section {
+        @include centre;
+    }
+
+    .img-generator {
+        @include centre;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .img-container {
+            height: 600px;
+            width: 600px;
+        }
+        
+        button {
+            margin-top: 15px;
+            @include centre;
+        }
+    }
+}
