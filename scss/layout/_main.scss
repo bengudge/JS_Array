@@ -18,12 +18,48 @@ header {
     display: flex;
     flex-direction: column;
 
-    .email-section {
+    #emails {
         @include centre;
     }
 
-    .img-generator {
+    section {
+        margin-bottom: 50px;
         @include centre;
+
+        table, th, td {
+            border: 2px solid $turquoise;
+            border-collapse: collapse;
+        }
+
+        table {
+            
+            @include centre;
+            border-radius: 15px;
+            border: 5px solid $turquoise;
+            max-width: 82%;
+        }
+
+        th {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        td {
+            
+            padding: 20px 20px;
+            img {
+                padding: 10px 5px;
+                
+            }
+        }
+
+        #assign-table {
+            display: none;
+        }
+    }
+
+    .img-generator {
+        
         margin-top: 30px;
         display: flex;
         flex-direction: column;
